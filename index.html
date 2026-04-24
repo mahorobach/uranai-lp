@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>月読み占い〜つきよみのみちびき〜</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 星空 -->
+  <div class="stars" id="stars"></div>
+
+  <!-- ===== ヘッダー ===== -->
+  <header>
+    <div class="moon-container fade-in">
+      <div class="moon-halo moon-halo-2"></div>
+      <div class="moon-halo"></div>
+      <div class="moon"></div>
+    </div>
+    <h1 class="site-title fade-in">月読み占い</h1>
+    <p class="site-subtitle fade-in">〜 つきよみのみちびき 〜</p>
+    <p class="tagline fade-in">
+      生まれた日時に刻まれた命の設計図と、<br>
+      名前の画数に宿る数の魂が交わるとき、<br>
+      あなただけの星の地図が浮かび上がります。
+    </p>
+  </header>
+
+  <!-- ===== 月読命について ===== -->
+  <section class="tsukiyomi-section">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">月読命とは</h2>
+      <div class="tsukiyomi-card">
+        <span class="tsukiyomi-icon">🌕</span>
+        <div class="tsukiyomi-name">月読命</div>
+        <div class="tsukiyomi-ruby">つきよみのみこと</div>
+
+        <button class="accordion-btn"
+          data-target="tsukiyomi-detail"
+          data-open-text="月読命について詳しく読む ▾"
+          data-close-text="閉じる ▴">
+          <span class="btn-text">月読命について詳しく読む</span>
+          <span class="arrow">▾</span>
+        </button>
+
+        <div class="accordion-content" id="tsukiyomi-detail">
+          <div class="accordion-body">
+            <p>
+              月読命は、日本神話において最も神秘的な神のひとりです。古事記・日本書紀によれば、
+              伊邪那岐命（いざなぎのみこと）が黄泉の国から戻り、禊（みそぎ）を行ったとき、
+              左目から<span class="highlight">天照大御神（あまてらすおおみかみ）</span>が、
+              右目から<span class="highlight">素戔嗚尊（すさのおのみこと）</span>が、
+              そして右目を洗ったときに<span class="highlight">月読命</span>が生まれたとされています。
+            </p>
+            <p>
+              天照大御神が太陽として昼の世界を治めるのに対し、月読命は月として夜の世界を静かに照らす神です。
+              しかしある出来事をきっかけに天照大御神と不仲となり、昼と夜が分かれたと古事記は伝えています。
+              それゆえ月読命は「語られない神」「謎多き神」として、日本神話の中で独特の神秘性を帯びています。
+            </p>
+            <p>
+              月は古来より、潮の満ち引きを動かし、農作物の時期を告げ、女性の体のリズムとも深く結びついてきました。
+              目には見えない力で万物に影響を与える月のように、月読命はあなたの内側に静かに働きかける力の象徴です。
+            </p>
+            <p>
+              「月読み占い」という名前には、<span class="highlight">「月読命のように、語られざるあなたの本質を静かに照らし出したい」</span>という想いが込められています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider">✦ ✦ ✦</div>
+
+  <!-- ===== サービス説明 ===== -->
+  <section class="about">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">月読み占いとは</h2>
+      <p class="about-text">
+        月読み占いは、生まれた日時に刻まれた「命の設計図」と、名前の画数に宿る「数の魂」を組み合わせることで、<span class="about-keyword">あなただけの固有の運勢</span>を読み解く占いです。
+      </p>
+      <p class="about-text">
+        四柱推命が示す「天から授かった気質と運命の流れ」と、数霊（かずたま）が示す「名前という言霊が持つ波動」。このふたつが交わるところに、あなたにしか存在しない唯一の星の地図が浮かび上がります。
+      </p>
+      <p class="about-text">
+        LINEで気軽にご利用いただけます。まずは<span class="about-keyword">無料鑑定</span>からお試しください。
+      </p>
+
+      <!-- 特徴カード（アコーディオン付き） -->
+      <div class="features">
+
+        <!-- 四柱推命カード -->
+        <div class="feature-card">
+          <span class="feature-icon">🌙</span>
+          <div class="feature-title">四柱推命</div>
+          <div class="feature-desc">生年月日時から命式を算出し、あなたの本質と運勢の流れを読み解きます</div>
+          <button class="accordion-btn"
+            data-target="shichu-detail"
+            data-open-text="四柱推命について詳しく ▾"
+            data-close-text="閉じる ▴">
+            <span class="btn-text">四柱推命について詳しく</span>
+            <span class="arrow">▾</span>
+          </button>
+          <div class="accordion-content" id="shichu-detail">
+            <div class="accordion-body">
+              <p>
+                四柱推命は、中国古代の陰陽五行思想を根拠に体系化された、<span class="highlight">東洋最古の命術</span>のひとつです。
+                人が生まれた「年・月・日・時」の四つの柱に刻まれた干支と五行の気を読み解き、
+                その人が持って生まれた本質・才能・人生の流れを明らかにします。
+              </p>
+              <p>
+                四柱推命が他の占術と異なるのは、単なる運勢の予測にとどまらず、
+                その人の<span class="highlight">「命の設計図」そのものを読む</span>点にあります。
+                あなたがどんな才能を持ち、どの時期に運気が高まり、どのような縁と結びつきやすいのか。
+                生まれた瞬間に天地が記した暗号を、丁寧に解読していきます。
+              </p>
+              <p>
+                月読み占いでは、この四柱推命を占いの根幹に据え、あなたの命式から導き出される言葉を大切にお届けしています。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 数霊カード -->
+        <div class="feature-card">
+          <span class="feature-icon">✨</span>
+          <div class="feature-title">数霊（かずたま）</div>
+          <div class="feature-desc">名前の画数に宿る波動から、あなたが持つ固有の才能と縁を紐解きます</div>
+          <button class="accordion-btn"
+            data-target="kazutama-detail"
+            data-open-text="数霊（かずたま）について詳しく ▾"
+            data-close-text="閉じる ▴">
+            <span class="btn-text">数霊（かずたま）について詳しく</span>
+            <span class="arrow">▾</span>
+          </button>
+          <div class="accordion-content" id="kazutama-detail">
+            <div class="accordion-body">
+              <p>
+                数霊とは、言葉や名前に宿る「数の魂」を読み解く、<span class="highlight">日本古来の叡智</span>です。
+                古事記や日本書紀にも記されているように、古代日本では言葉には霊力が宿ると信じられていました。
+                これを「言霊（ことだま）」と呼びます。数霊はその言霊と深く結びつき、
+                名前を構成する文字の画数に宿る波動から、その人の本質と運命の傾向を読み取ります。
+              </p>
+              <p>
+                数霊において特に重視されるのが<span class="highlight">「81の数理」</span>です。
+                1から81までの数にはそれぞれ固有の意味と吉凶があり、古来より受け継がれてきました。
+                81という数字は、9×9＝81、すなわち「陽の極み」を表す9が二重になった数であり、
+                万物の循環と完成を象徴しています。
+              </p>
+              <p>
+                あなたの名前に宿る数の波動は、生まれながらに持つ才能や縁、人生のテーマを静かに語りかけています。
+                月読み占いでは、この数霊の叡智を四柱推命と組み合わせることで、
+                <span class="highlight">より深く、より精密な鑑定</span>をお届けします。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- LINEカード -->
+        <div class="feature-card">
+          <span class="feature-icon">💬</span>
+          <div class="feature-title">LINEで完結</div>
+          <div class="feature-desc">アプリ不要。LINEを友だち追加するだけで、すぐに鑑定を受けられます</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider">✦ ✦ ✦</div>
+
+  <!-- ===== 料金表 ===== -->
+  <section class="pricing">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">鑑定メニュー</h2>
+      <div class="price-grid">
+        <div class="price-card">
+          <div class="price-name">無料鑑定</div>
+          <div class="price-desc">あなたの命式と数霊から<br>運命の輪郭をお届けします</div>
+          <div class="price-amount price-free">無料</div>
+        </div>
+        <div class="price-card">
+          <div class="price-name">恋愛の鑑定</div>
+          <div class="price-desc">縁・相性・愛の運気を<br>深く読み解きます</div>
+          <div class="price-amount">880<span>円</span></div>
+        </div>
+        <div class="price-card">
+          <div class="price-name">仕事の鑑定</div>
+          <div class="price-desc">才能・適職・仕事運の<br>核心に迫ります</div>
+          <div class="price-amount">880<span>円</span></div>
+        </div>
+        <div class="price-card">
+          <div class="price-name">財運の鑑定</div>
+          <div class="price-desc">金運・財の流れ・豊かさへの<br>道筋を示します</div>
+          <div class="price-amount">880<span>円</span></div>
+        </div>
+        <div class="price-card">
+          <div class="price-name">時の運</div>
+          <div class="price-desc">今この時期に流れる運気と<br>動くべき時を読みます</div>
+          <div class="price-amount">1,500<span>円</span></div>
+        </div>
+        <div class="price-card featured">
+          <div class="price-name">人生の設計図</div>
+          <div class="price-desc">恋愛・仕事・財運・時の運・人生テーマ<br>全てを織り込んだ総合鑑定</div>
+          <div class="price-amount">2,980<span>円</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider">✦ ✦ ✦</div>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section fade-in">
+    <div class="section-inner">
+      <p class="cta-text">
+        月の光があなたを照らすとき、<br>
+        それはあなたの物語が動き始めるとき。
+      </p>
+      <a href="https://line.me/R/ti/p/@776zhkvc" class="btn-line">LINEで無料鑑定を受ける</a>
+      <p class="btn-note">※ LINEアプリが必要です</p>
+    </div>
+  </section>
+
+  <div class="divider">✦ ✦ ✦</div>
+
+  <!-- ===== 特定商取引法 ===== -->
+  <section class="legal">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">特定商取引法に基づく表記</h2>
+      <table class="legal-table">
+        <tr>
+          <th>販売業者</th>
+          <td>まほろばチャンネル</td>
+        </tr>
+        <tr>
+          <th>運営責任者</th>
+          <td>（お問い合わせ時にお知らせします）</td>
+        </tr>
+        <tr>
+          <th>所在地</th>
+          <td>〒794-0011<br>愛媛県今治市唐子台西３丁目１０の１−４０２</td>
+        </tr>
+        <tr>
+          <th>メールアドレス</th>
+          <td>machorobachn@gmail.com</td>
+        </tr>
+        <tr>
+          <th>販売価格</th>
+          <td>各鑑定メニューに記載の価格（税込）</td>
+        </tr>
+        <tr>
+          <th>支払方法</th>
+          <td>クレジットカード（Stripe決済）</td>
+        </tr>
+        <tr>
+          <th>サービスの提供時期</th>
+          <td>決済完了後、LINEにて即時お届けします</td>
+        </tr>
+        <tr>
+          <th>返品・キャンセルポリシー</th>
+          <td>本サービスはデジタルコンテンツの即時提供であるため、鑑定結果をお届けした後の返金・キャンセルはお受けできません。ただし、システムの不具合により鑑定結果が正常に届かなかった場合は、再送または返金対応いたします。</td>
+        </tr>
+        <tr>
+          <th>動作環境</th>
+          <td>LINEアプリがインストールされたスマートフォン・PC</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== プライバシーポリシー ===== -->
+  <section class="privacy-section">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">プライバシーポリシー</h2>
+
+      <h3>取得する情報</h3>
+      <p>当サービスでは、鑑定に必要な以下の情報をお客様にご入力いただきます。氏名（ふりがな含む）、生年月日、LINEのユーザーIDおよびメッセージ内容。</p>
+
+      <h3>利用目的</h3>
+      <p>取得した個人情報は、占い鑑定結果の生成・提供、お客様へのご連絡、サービス改善のための分析にのみ使用します。第三者への提供は行いません。</p>
+
+      <h3>第三者提供</h3>
+      <p>法令に基づく場合を除き、お客様の個人情報を第三者に提供することはありません。なお、鑑定文の生成にはAIサービスを利用しており、入力いただいた情報の一部が処理に使用されます。</p>
+
+      <h3>情報の管理</h3>
+      <p>取得した情報は適切なセキュリティ対策を講じたデータベースにて管理し、不正アクセス・紛失・改ざん等が起きないよう努めます。</p>
+
+      <h3>お問い合わせ</h3>
+      <p>個人情報の取り扱いに関するお問い合わせは、machorobachn@gmail.com までご連絡ください。</p>
+
+      <h3>ポリシーの変更</h3>
+      <p>本プライバシーポリシーは、必要に応じて改定する場合があります。変更後はこのページにて公開します。</p>
+    </div>
+  </section>
+
+  <!-- ===== フッター ===== -->
+  <footer>
+    <div class="footer-logo">月読み占い 〜つきよみのみちびき〜</div>
+    <p>© 2025 まほろばチャンネル All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
