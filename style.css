@@ -592,3 +592,22 @@ footer {
     padding: 18px 16px;
   }
 }
+
+/* ===== フッターナビ ===== */
+.footer-nav {
+  margin: 12px 0;
+}
+.footer-nav a {
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  transition: opacity 0.3s;
+}
+.footer-nav a:hover {
+  opacity: 0.7;
+}
+.footer-nav span {
+  color: var(--silver);
+  margin: 0 12px;
+}
